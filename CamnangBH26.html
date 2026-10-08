@@ -920,7 +920,7 @@
     const src=embed(url);
     if(src){
       frame.className='video-frame';
-      frame.innerHTML='<iframe src="'+src+'" title="'+title.textContent+'" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+      frame.innerHTML='<iframe src="'+src+'" title="'+title.textContent+'" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>';
     }else{
       frame.className='video-empty';
       frame.textContent=vi
